@@ -10,7 +10,9 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 from src.domain import RouteClassification
 from src.config import get_routing_engine, get_agent_reasoning_engine
 from src.tools import ACTIVE_SESSION_ID
-# 1. Instantiate engines globally
+
+
+# Instantiate engines globally
 router_model = get_routing_engine()
 reasoning_agent_model = get_agent_reasoning_engine()
 
