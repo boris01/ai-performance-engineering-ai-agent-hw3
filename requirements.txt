@@ -1,0 +1,21 @@
+# --- Core Orchestration & Framework Layer ---
+langchain-core>=0.3.80
+langchain-openai>=0.1.0
+langgraph>=1.2.1
+
+# --- Standardized Tool Exposure Layer (MCP Spec) ---
+mcp>=1.27.1
+fastmcp>=3.3.1
+
+# --- Data & Validation Infrastructure Layer ---
+pandas>=2.2.0
+pydantic>=2.10.0
+fsspec>=2026.4.0
+huggingface_hub>=1.16.1
+
+# --- Environment Configuration ---
+python-dotenv>=1.0.1
+
+# Persistent Memory Checkpointer Extension Layer
+langgraph-checkpoint==4.1.1
+langgraph-checkpoint-sqlite==3.1.0
