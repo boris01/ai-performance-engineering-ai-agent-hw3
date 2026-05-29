@@ -94,7 +94,7 @@ async def run_client():
             await session.initialize()
             
             # Request metadata directly from the MCP Server
-            result = await session.call_tool("get_metrics", arguments={})
+            result = await session.call_tool("get_category_metrics", arguments={})
             print(f"Server Response: {result.content[0].text}")
 
 if __name__ == "__main__":
