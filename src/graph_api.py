@@ -113,7 +113,7 @@ def route_query(state: AgentState) -> str:
         # We route directly to the node names
         if decision.query_type == "out_of_scope":
             return "out_of_scope"
-        return "agent" # both structured and unstructured request will go the agent, it is cable of handling both with its tools and reasoning
+        return "agent" # both structured and unstructured request will go the agent, it is capable of handling both with its tools and reasoning
 
     except Exception as e:
         print(f"🚨 [System Guard Alert]: Structured output parsing failure: {str(e)}")

@@ -145,7 +145,7 @@ def build_agent(tools: list):
         if query_type == "out_of_scope":
             decline_msg = handle_out_of_scope().result()
             return [decline_msg]
-        # both structured and unstructured request will go the agent, it is cable of handling both with its tools and reasoning
+        # both structured and unstructured request will go the agent, it is capable of handling both with its tools and reasoning
         max_iterations = 12
         for iteration in range(max_iterations):
             agent_response = execute_react_reasoning(conversation_history, tools).result()
